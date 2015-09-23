@@ -1,0 +1,24 @@
+  Fins 23/09/20115
+ 
+    Instalar git
+sudo apt-get install git
+
+
+Creamos un repositorio en github
+
+Clonamos  un repositorio de github
+git clone https://github.com/PhilippePego95/ed.git
+   
+gedit hola-mundo-git.txt
+  
+git add-
+  
+git config --global user.name philippepego95
+git config --global user.email dam.pgonzalez@institutoserpis.org
+
+git commit -m "Hola mundo desde git"
+  
+git push
+ 
+
+
