@@ -1,0 +1,8 @@
+    #include <stdio.h>
+	void main ()
+	{
+	char nom [10];
+	printf ("Escribe tu nombre: ");
+	scanf ("%s",nom);
+	printf ("hola:%s\n",nom);
+	}
