@@ -19,7 +19,7 @@ public class Array {
 			suma = suma + item;
 		return suma;
 	}
-	private static int menor(int[]v){
+	static int menor(int[]v){
 	
 		int menor, num;
 		menor=v[0];
@@ -32,5 +32,9 @@ public class Array {
 		}
 		return menor;
 	}
-}
+	public static int indexOf(int[]v,int item){
+		return 0;
+	}
+	}
+
 
