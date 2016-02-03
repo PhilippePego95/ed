@@ -5,8 +5,7 @@ using System.Collections.Generic;
 
 public partial class MainWindow: Gtk.Window
 {	
-	private Random Random;
-	public MainWindow (): base (Gtk.WindowType.Toplevel)
+		public MainWindow (): base (Gtk.WindowType.Toplevel)
 	{
 		Build ();
 
@@ -36,7 +35,7 @@ public partial class MainWindow: Gtk.Window
 		button1.Clicked += delegate {
 			int indexAleatorio = random.Next(buttons.Count);
 			Button button = buttons[indexAleatorio];
-			button.ModifyBg(StateType.Normal, new Gdk.Color(0,255,0));
+			button.ModifyBg(StateType.Normal, new Gdk.Color(0,200,0));
 			buttons.RemoveAt(indexAleatorio);
 			indexAleatorio++;
 			Process.Start("espeak", "-v es "+button.Label);
