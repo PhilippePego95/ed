@@ -1,4 +1,4 @@
-package com.example.mati.myapplication;
+package com.mycompany.calculadora;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -12,8 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-
-public class DisplayMessageActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     EditText txtn1,txtn2;
     Button btnS, btnR,btnM,btnD;
@@ -35,40 +34,40 @@ public class DisplayMessageActivity extends AppCompatActivity {
         btnS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int num1= Integer.parseInt(txtn1.getText().toString());
-                int num2= Integer.parseInt(txtn2.getText().toString());
-                int s=num1+num2;
-                txtR.setText("Resultado: "+s);
+                double num1= Double.parseDouble(txtn1.getText().toString());
+                double num2= Double.parseDouble(txtn2.getText().toString());
+                double s=num1+num2;
+                txtR.setText("Resultat: "+s);
             }
         });
 
         btnM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int num1= Integer.parseInt(txtn1.getText().toString());
-                int num2= Integer.parseInt(txtn2.getText().toString());
-                int s=num1*num2;
-                txtR.setText("Resultado: "+s);
+                double num1= Double.parseDouble(txtn1.getText().toString());
+                double num2= Double.parseDouble(txtn2.getText().toString());
+                double s=num1*num2;
+                txtR.setText("Resultat: "+s);
             }
         });
 
         btnR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int num1= Integer.parseInt(txtn1.getText().toString());
-                int num2= Integer.parseInt(txtn2.getText().toString());
-                int s=num1-num2;
-                txtR.setText("Resultado: "+s);
+                double num1= Double.parseDouble(txtn1.getText().toString());
+                double num2= Double.parseDouble(txtn2.getText().toString());
+                double s=num1-num2;
+                txtR.setText("Resultat: "+s);
             }
         });
 
         btnD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int num1= Integer.parseInt(txtn1.getText().toString());
-                int num2= Integer.parseInt(txtn2.getText().toString());
-                int s=num1/num2;
-                txtR.setText("Resultado: "+s);
+                double num1= Double.parseDouble(txtn1.getText().toString());
+                double num2= Double.parseDouble(txtn2.getText().toString());
+                double s=num1/num2;
+                txtR.setText("Resultat: "+s);
             }
         });
     }
